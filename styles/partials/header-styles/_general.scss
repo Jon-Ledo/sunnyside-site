@@ -1,0 +1,20 @@
+header {
+  background: url(../../../images/desktop/image-header.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  color: $white;
+
+  h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top:100px;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px $veryDarkGrayishBlue;
+  }
+
+  img {
+    filter: drop-shadow(0.5px 0.5px 1px #333);
+  }
+}

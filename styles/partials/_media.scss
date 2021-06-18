@@ -1,0 +1,200 @@
+@media (max-width: 1440px) {
+  .content-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    .navbar__links-container {
+      display: none;
+      width: 100%;
+      padding-left: 0px;
+  
+      // javascript added class for burger menu
+      &.show {
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw - 10%);
+        background: $white;
+        height: 300px;
+        position: absolute;
+        top: 100px;
+        left: 5%;
+        right: 5%;
+        z-index: 1;
+        justify-content: space-evenly;
+
+        // white triangle above "modal"
+        &::before {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: -30px;
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-bottom: 50px solid $white;
+        }
+
+        .navbar__link {
+          color: $darkGrayishBlue;
+          margin-left: 0px;
+          text-shadow: none;
+          font-size: 2rem;
+          
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: $yellow;
+            color: black;
+          }
+        }
+      }
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+}
+
+// mobile
+@media (max-width: 375px) {
+  header {
+    background: url(../../images/mobile/image-header.jpg) no-repeat;
+    background-size: contain;
+    min-height: 538px;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 0.8em;
+    }
+  }
+
+  .info__gallery {
+    width: 100%;
+    flex-direction: column;
+
+    // affixing flex order to the divs
+    .flex-order-1 {order: 1}
+    .flex-order-2 {order: 2}
+    .flex-order-3 {order: 3}
+    .flex-order-4 {order: 4}
+    .flex-order-5 {order: 5}
+    .flex-order-6 {order: 6}
+    
+    .info__gallery-card {
+      width: 100%;
+      height: 400px;
+      text-align: center;
+
+      .info__gallery-title {
+        font-size: 3.2rem;
+        width: 80%;
+        margin: 0;
+      }
+      
+      .info__gallery-text {
+        width: 80%;
+        line-height: 3rem;
+        margin: 50px 0px;
+      }
+
+      .btn {
+        position: relative;
+        left: -20%;
+      }
+    }
+
+    // resized the images
+    .info__gallery-img {
+      width: 375px;
+      height: 400px;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    // Photography and Grapic Design boxes
+    .card--bg1 {
+      background-position: center;
+      background-size: cover;
+      height: 625px;
+    }
+    
+    .card--bg2 {
+      background-position: center;
+      background-size: cover;
+      height: 625px;
+    }
+
+    .card--text {
+      text-align: center;
+      padding-top: 370px;
+      
+      .info__gallery-text {
+        font-size: 1.6rem;
+        width: 90%;
+      }
+    }
+  }
+
+  .testimonials {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+    .testimonials__title {
+      font-size: 1.6rem;
+      letter-spacing: 4px;
+      margin-bottom: 0px;
+    }
+    
+    .flex-sb {
+      flex-direction: column;
+
+      .testimonials__card-container {
+        width: 100%;
+  
+        img {
+          width: 80px;
+          height: 80px;
+          margin-top: 60px;
+        }
+  
+        .testimonials__text{
+          margin: 35px 0px;
+        }
+      }
+    }
+  }
+
+  .image-gallery {
+    flex-wrap: wrap;
+
+    .image-gallery--img {
+      display: block;
+      width: 50%;
+      height:200px;
+    }
+  }
+
+  .navigation {
+    padding: 80px 0px;
+
+    .bottom-nav {
+      .navbar__links-container2 {
+        margin-bottom: 100px;
+        justify-content: space-evenly;
+      }
+    } 
+
+    // socials icons
+    .socials__container {
+      padding-left: 0;
+    }
+  }
+}

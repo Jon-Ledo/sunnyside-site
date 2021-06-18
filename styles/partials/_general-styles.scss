@@ -1,0 +1,38 @@
+// base layout
+body {
+  font-size: $bodyFontSize;
+  font-family: $bodyFont;
+  color: $veryDarkDesaturatedBlue;
+  background-color: $white;
+}
+
+// typography
+.header-font {
+  font-family: $headerFont;
+  font-weight: 900;
+}
+
+// layout
+.content-wrapper {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1440px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
